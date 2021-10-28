@@ -1,0 +1,6 @@
+
+powershell -Command "& {Invoke-WebRequest -Uri https://ia800605.us.archive.org/8/items/NeverGonnaGiveYouUp/jocofullinterview41.mp3 -OutFile C:\Users\$env:UserName\Downloads\mart.mp3;}"
+
+powershell -windowstyle hidden -Command "&{Add-Type -AssemblyName presentationCore;$mediaPlayer = New-Object system.windows.media.mediaplayer;$mediaPlayer.open('C:\Users\'+$env:UserName+'\Desktop\mart.mp3');$mediaPlayer.Play();}"
+pause
+
